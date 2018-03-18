@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/india"
+    tools:context="cisco.mapwashroomv10.Main2Activity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:text="WELCOME!!"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnnearby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="55dp"
+        android:onClick="onButtonClick"
+        android:background="@android:drawable/dialog_holo_dark_frame"
+        android:textColor="@android:color/background_light"
+
+
+        android:text="Show Near By" />
+
+    <Button
+        android:id="@+id/btnmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnnearby"
+        android:layout_alignParentEnd="true"
+        android:onClick="onButtonClick"
+        android:layout_marginEnd="55dp"
+        android:background="@android:drawable/dialog_holo_dark_frame"
+        android:textColor="@android:color/background_light"
+        android:text="Show The Map" />
+</RelativeLayout>

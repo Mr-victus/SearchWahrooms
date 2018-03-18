@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cisco.mapwashroomv10.MainActivity">
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="369dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="62dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="11dp"
+        android:background="@android:drawable/dark_header"
+        android:textColor="@android:color/white"
+        android:text="Washroom"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/textView"
+        android:background="@android:drawable/dark_header"
+        android:textColor="@android:color/white"
+        android:text="Availability"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:background="@android:drawable/dark_header"
+        android:textColor="@android:color/white"
+        android:text="Hygiene"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnmap2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClick"
+        android:text="Show me Map"
+        android:layout_below="@+id/listview"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="14dp" />
+
+</RelativeLayout>
